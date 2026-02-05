@@ -2,8 +2,7 @@
 
 **Le plugin de pré-génération de chunks le plus rapide pour Minecraft Paper 1.21.11**
 
-[![Performance](https://img.shields.io/badge/Performance-2.26x%20Chunky-brightgreen)](https://github.com/yourusername/ultrafastpregen)
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue)](https://github.com/yourusername/ultrafastpregen/releases)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue)](https://github.com/Zeffut/UltraFastPregen/releases)
 [![Paper](https://img.shields.io/badge/Paper-1.21.11-orange)](https://papermc.io/)
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)](LICENSE)
 
@@ -11,26 +10,22 @@
 
 ## 📊 Performances Exceptionnelles
 
-UltraFastPregen est **2.26x plus rapide que Chunky**, le plugin de référence actuel:
-
-| Rayon | Chunks | UltraFastPregen | Chunky | Gain |
-|-------|--------|-----------------|--------|------|
-| 1000 blocs | 12,281 | **2m 10s** @ 95.8 chunks/sec | 4m 54s @ 54.8 chunks/sec | **2.26x** |
-| 5000 blocs | 306,777 | **~24 minutes** @ 213 chunks/sec | **~55 minutes** @ 93 chunks/sec | **2.3x** |
+UltraFastPregen est optimisé pour la **vitesse maximale** de pré-génération:
 
 ### 🎯 Pourquoi si rapide?
 
 1. **Architecture optimisée par régions** - Génération alignée sur les fichiers .mca de Minecraft
 2. **RegionCache intelligent** - Détection ultra-rapide des chunks déjà générés (lecture fichiers)
-3. **Haute concurrence** - 300-500 chunks en parallèle (vs 50 pour Chunky)
+3. **Haute concurrence** - 300-500 chunks en parallèle selon votre RAM
 4. **Memory-adaptive** - Ajustement automatique selon la RAM disponible
 5. **Batch processing** - Soumission par lots de 128 chunks
+6. **Zero TPS impact** - Génération asynchrone sans ralentir le serveur
 
 ---
 
 ## ✨ Fonctionnalités
 
-- ⚡ **2.26x plus rapide que Chunky**
+- ⚡ **Ultra-rapide** - Architecture optimisée pour la génération de chunks
 - 🔲 **Deux formes de génération**: Carré (défaut) ou Cercle
 - 📊 **Statistiques en temps réel**: Progression, vitesse, ETA, TPS
 - ⏸️ **Contrôle total**: Pause, reprise, arrêt à tout moment
@@ -43,7 +38,7 @@ UltraFastPregen est **2.26x plus rapide que Chunky**, le plugin de référence a
 
 ## 🚀 Installation
 
-1. Téléchargez la dernière version depuis [Releases](https://github.com/yourusername/ultrafastpregen/releases)
+1. Téléchargez la dernière version depuis [Releases](https://github.com/Zeffut/UltraFastPregen/releases)
 2. Placez `UltraFastPregen.jar` dans le dossier `plugins/` de votre serveur
 3. Redémarrez le serveur
 4. C'est prêt! Utilisez `/pregen help`
@@ -148,10 +143,10 @@ UltraFastPregen s'adapte automatiquement à votre serveur:
 
 | RAM Allouée | Chunks Parallèles | Performance |
 |-------------|-------------------|-------------|
-| 8GB+ | 500 | Ultra (10x Chunky) |
-| 4-8GB | 300 | Très élevée (6x Chunky) |
-| 2-4GB | 200 | Élevée (4x Chunky) |
-| <2GB | 100 | Standard (2x Chunky) |
+| 8GB+ | 500 | Ultra-rapide |
+| 4-8GB | 300 | Très élevée |
+| 2-4GB | 200 | Élevée |
+| <2GB | 100 | Standard |
 
 **Aucune configuration nécessaire** - Le plugin optimise automatiquement selon vos ressources!
 
@@ -178,22 +173,6 @@ UltraFastPregen s'adapte automatiquement à votre serveur:
 - Toutes les structures sont thread-safe
 - Synchronisation sur les opérations critiques
 - Aucune race condition
-
----
-
-## 📈 Benchmarks Complets
-
-### Test 1: Rayon 1000 (12,281 chunks - Cercle)
-- **UltraFastPregen**: 2m 10s @ 95.8 chunks/sec
-- **Chunky**: 4m 54s @ 54.8 chunks/sec
-- **Gain**: **2.26x plus rapide** ✅
-
-### Test 2: Rayon 5000 (306,777 chunks - Cercle)
-- **UltraFastPregen**: ~24 minutes @ 213 chunks/sec
-- **Chunky**: ~55 minutes @ 93 chunks/sec
-- **Gain**: **2.3x plus rapide** ✅
-
-*Conditions: Paper 1.21.11, 8GB RAM, SSD*
 
 ---
 
@@ -239,15 +218,15 @@ Voir le fichier [LICENSE](LICENSE) pour les détails complets.
 
 ## 🔗 Liens Utiles
 
-- [Releases](https://github.com/yourusername/ultrafastpregen/releases)
-- [Issues](https://github.com/yourusername/ultrafastpregen/issues)
+- [Releases](https://github.com/Zeffut/UltraFastPregen/releases)
+- [Issues](https://github.com/Zeffut/UltraFastPregen/issues)
 - [Paper Documentation](https://docs.papermc.io/)
 
 ---
 
 ## 💬 Support
 
-Besoin d'aide? Ouvrez une [Issue](https://github.com/yourusername/ultrafastpregen/issues)!
+Besoin d'aide? Ouvrez une [Issue](https://github.com/Zeffut/UltraFastPregen/issues)!
 
 ---
 
