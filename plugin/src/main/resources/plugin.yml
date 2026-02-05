@@ -1,0 +1,17 @@
+name: UltraFastPregen
+version: ${version}
+main: com.ultrafastpregen.UltraFastPregen
+api-version: '1.21'
+author: zeffut
+description: Plugin de pré-génération ultra-rapide de map Minecraft
+
+commands:
+  pregen:
+    description: Commandes de pré-génération
+    usage: /pregen <start|stop|status|help>
+    permission: ultrafastpregen.use
+    
+permissions:
+  ultrafastpregen.use:
+    description: Permet d'utiliser les commandes de pré-génération
+    default: op
